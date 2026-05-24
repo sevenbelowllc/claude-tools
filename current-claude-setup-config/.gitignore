@@ -1,0 +1,11 @@
+# Captured config (your real CLAUDE.md, settings, hooks) — local only, never published.
+global/
+project/
+
+# Machine/account-specific values.
+local.env
+
+# Restore-time backups of overwritten files.
+.restore-backup/
+
+.DS_Store
