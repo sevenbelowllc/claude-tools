@@ -1,0 +1,23 @@
+# Claude config snapshot manifest
+# Format:  <live-path>  <repo-path>
+# $HOME and $PROJ are expanded by capture.sh / restore.sh.
+# Lines starting with # and blank lines are ignored.
+
+# --- Global (~/.claude) ---
+$HOME/.claude/CLAUDE.md                       global/CLAUDE.md
+$HOME/.claude/settings.json                   global/settings.json
+$HOME/.claude/statusline-context.sh           global/statusline-context.sh
+$HOME/.claude/plugins/known_marketplaces.json global/plugins/known_marketplaces.json
+
+# --- Project ---
+$PROJ/CLAUDE.md                               project/CLAUDE.md
+$PROJ/.mcp.json                               project/.mcp.json
+$PROJ/.claude/settings.json                   project/.claude/settings.json
+$PROJ/.claude/settings.local.json             project/.claude/settings.local.json
+$PROJ/.claude/hooks/pre_compact.py            project/.claude/hooks/pre_compact.py
+$PROJ/.claude/hooks/prompt_scan.py            project/.claude/hooks/prompt_scan.py
+$PROJ/.claude/hooks/session_end.py            project/.claude/hooks/session_end.py
+$PROJ/.claude/hooks/session_start.py          project/.claude/hooks/session_start.py
+$PROJ/.claude/hooks/status_line.py            project/.claude/hooks/status_line.py
+$PROJ/.claude/hooks/stop_capture.py           project/.claude/hooks/stop_capture.py
+$PROJ/.claude/hooks/token_tracker.py          project/.claude/hooks/token_tracker.py
