@@ -1,5 +1,8 @@
-# Captured config (your real CLAUDE.md, settings, hooks) — local only, never published.
-global/
+# Captured config — local only, EXCEPT global/CLAUDE.md, which is intentionally
+# published so a fresh setup restores it. Everything else under global/, and all
+# of project/, stays local.
+global/*
+!global/CLAUDE.md
 project/
 
 # Machine/account-specific values.
