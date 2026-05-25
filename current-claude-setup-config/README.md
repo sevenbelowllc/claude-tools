@@ -3,9 +3,10 @@
 A small tool to **snapshot and restore Claude Code configuration** so you can reset
 to a known-good state. Config only — no secrets, no sessions, no memory.
 
-Your actual captured config and machine-specific paths stay **local and gitignored**
-(`global/`, `project/`, `local.env`). Only the generic tooling is committed, so this
-is safe in a public repo.
+The generic tooling and the global `CLAUDE.md` are committed here. The rest of the
+captured config (settings, hooks, project files), plus machine-specific values, stay
+**local and gitignored** — on a fresh clone you supply your own. `restore.sh` places
+whatever is present and warns about anything missing.
 
 ## Setup
 
@@ -72,4 +73,3 @@ Values already written as `${VAR}` in source config (e.g. API tokens in
   virtualenv). Recreate those separately; they aren't captured here.
 - macOS-specific: scripts use BSD `sed -i ''` and `stat -f`. Adjust for GNU
   coreutils on Linux.
-```
